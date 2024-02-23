@@ -1,11 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, TextInput, View } from 'react-native';
+import HomeScreen from './src/Screens/HomeScreen';
+import relativeTime from "dayjs/plugin/relativeTime"
+import dayjs from 'dayjs';
 
+dayjs.extend(relativeTime);
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <HomeScreen />
+      <StatusBar style="auto" backgroundColor='white' />
     </View>
   );
 }
@@ -13,8 +17,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#000",
+    marginTop: 55
   },
 });
+
