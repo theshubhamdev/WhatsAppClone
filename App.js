@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TextInput, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import HomeScreen from './src/Screens/HomeScreen';
-import relativeTime from "dayjs/plugin/relativeTime"
+import relativeTime from 'dayjs/plugin/relativeTime';
 import dayjs from 'dayjs';
 
 dayjs.extend(relativeTime);
