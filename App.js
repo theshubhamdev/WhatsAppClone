@@ -3,12 +3,14 @@ import { StyleSheet, View } from 'react-native';
 import HomeScreen from './src/Screens/HomeScreen';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import dayjs from 'dayjs';
+import ChatRoom from './src/Screens/ChatRoom';
 
 dayjs.extend(relativeTime);
 export default function App() {
   return (
     <View style={styles.container}>
-      <HomeScreen />
+      {/* <HomeScreen /> */}
+      <ChatRoom />
       <StatusBar style="auto" backgroundColor='white' />
     </View>
   );
